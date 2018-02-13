@@ -223,7 +223,11 @@ router.post("/add/content",checkLogin,function (req,res) {
            let newBookContent=bookContent.filter(function (item,index) {//获取对应章节的content
                return item.book_list_id==bookListId;
            });
-           body.book_list_content='<p>'+body.book_list_content.replace(/(\n)/g,"</p><p>")+'</p>';
+           if(body.book_list_content){
+               body.book_list_content='<p>'+body.book_list_content.replace(/(\n)/g,"</p><p>")+'</p>';
+           }else {
+               body.book_list_content='还没有内容'
+           }
            newBookContent[0].book_list_content=body.book_list_content.replace(/^\n$/g,"<br>");
            db.Book.update({book_id:bookId},book,function (err,doc) {
                if(err){}
