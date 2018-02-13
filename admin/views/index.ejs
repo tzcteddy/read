@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><title>me</title><style>html{font-size: 50px;height:100%;}ul,li{list-style:none;}a{text-decoration: none}</style><script>(function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            clientWidth=clientWidth>=500 ? 500 :clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize =50 * (clientWidth / 375) + 'px';
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);</script><link href=/static/css/app.9a830c96f48cb4f77ce6012be9ce644b.css rel=stylesheet></head><body style="height: 100%; margin: 0; padding:0;"><div id=app></div><script type=text/javascript src=/static/js/manifest.d1b1f4fc39296b1143d2.js></script><script type=text/javascript src=/static/js/vendor.8af06f9c7c6122f04878.js></script><script type=text/javascript src=/static/js/app.f5bf69ac559c1c953ba7.js></script></body></html>

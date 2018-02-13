@@ -1,0 +1,9 @@
+{
+  "name":"三国演义",
+  "author":"罗贯中",
+  "mulu":[],
+  "score":"4.3",
+  "picUrl":"./src/assets/image/sanguoyanyi.jpg",
+  "type":"literatrue",
+  "fillName":"sanguo"
+}

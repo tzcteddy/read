@@ -1,0 +1,23 @@
+[
+  {
+    "id":"1",
+    "name":"西游记",
+    "urlBase":"/book/literatrue/xiyou",
+    "detailUrl":"/detail/literatrue/xiyou",
+    "picUrl":"./src/assets/image/xiyouji.jpg"
+  },
+  {
+    "id":"2",
+    "name":"三国演义",
+    "urlBase":"/book/literatrue/sanguo",
+    "detailUrl":"/detail/literatrue/sanguo",
+    "picUrl":"./src/assets/image/sanguoyanyi.jpg"
+  },
+  {
+    "id":"3",
+    "name":"红楼梦",
+    "urlBase":"/book/literatrue/honglou",
+    "detailUrl":"/detail/literatrue/honglou",
+    "picUrl":"./src/assets/image/hongloumeng.jpg"
+  }
+]
