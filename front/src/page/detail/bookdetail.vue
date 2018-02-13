@@ -37,7 +37,7 @@
       return {
         list:false,
         book_id:'',
-        book_score:3,
+        book_score:"",
         book_name:"",
         book_author:"",
         book_type:"",
@@ -63,6 +63,7 @@
               this.book_type=res.book.book_type;
               this.book_pic=res.book.book_pic;
               this.book_author=res.book.book_author;
+              this.book_score=res.book.book_score;
               this.bookList=res.book.book_content;
               this.bookList.length>0?this.list=true:this.list=false;
             }

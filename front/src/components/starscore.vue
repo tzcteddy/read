@@ -11,10 +11,8 @@
   const CLS_HALF = 'half';
   const CLS_OFF = 'off';
   export default{
-      name:"starscore",
-    props:{
-      score:null
-    },
+    name:"starscore",
+    props:["score"],
     computed:{
       itemClasses(){
         let result = [];

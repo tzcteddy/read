@@ -14,8 +14,8 @@
           </div>
         </div>
         <div class="book-detail">
-          <input type="text" name="book_name" id="book_name" class="book-name" v-model="book_name" value="">
-          <Star-Score :score="book_score"></Star-Score>
+          <p class="book-t">名称：<input type="text" name="book_name" id="book_name" class="book-name" v-model="book_name" value=""></p>
+          <p class="book-t">评分：<input type="text" name="book_score" id="book_score" class="book-score" v-model="book_score"></p>
           <p class="book-t ">作者：<input type="text"name="book_author" class="book-author" id="book_author" v-model="book_author" value=""></p>
           <p class="book-t">分类：<input id="book_type" name="book_type" type="text" v-model="book_type" value=""></p>
         </div>
@@ -55,7 +55,7 @@
       return {
           list:false,
          book_id:'',
-         book_score:3,
+         book_score:0,
          book_name:"",
          book_author:"",
          book_type:"",
@@ -83,6 +83,7 @@
                this.book_pic=res.book.book_pic;
                this.book_author=res.book.book_author;
                this.bookList=res.book.book_content;
+               this.book_score=res.book.book_score;
                this.bookList.length>0?this.list=true:this.list=false;
              }
            })
@@ -268,6 +269,7 @@
   .detail-top .introduction .book-detail{
     display: inline-block;
     padding-left: 0.4rem;
+    width: 4.5rem;
     vertical-align: top;
   }
   .detail-top  .book-detail .book-name{
