@@ -40,7 +40,7 @@ app.use(session({
 app.use("/login",routes.login);
 app.use("/book",routes.book);
 app.get("*",function (req,res) {
-    res.render("index");
+    res. render("index");
 });
 
 

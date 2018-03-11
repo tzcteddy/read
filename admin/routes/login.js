@@ -9,12 +9,15 @@ let router=express.Router();
 //登录
 router.post("/admin",function (req,res) {
     let adminInfo=req.body;
-   db.Admin.findOne(adminInfo,function (err,doc) {
+    db.Admin.findOne(adminInfo,function (err,doc) {
        if(err){
+           res.send(JSON.stringify({status:"0",msg:"没有此账号"}))
        }else {
            if(doc){
                req.session.admin=doc;
                res.send(JSON.stringify({status:"1",msg:"登录成功"}))
+           }else{
+               res.send(JSON.stringify({status:"0",msg:"没有此账号"}))
            }
        }
    })

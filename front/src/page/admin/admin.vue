@@ -31,10 +31,12 @@
     methods:{
       async login(admin_name,password) {
         await adminLogin(admin_name,password).then(res=>{
-            if(res.status){
+          console.log(res);
+          if(res.status=="1"){
                 this.$router.push({path:"/admin/book/list",query:{type:"all"}})
             }else {
                 this.isShow=true;
+              alert(res.msg)
             }
         })
       }
