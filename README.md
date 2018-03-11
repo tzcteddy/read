@@ -59,4 +59,4 @@ node app.js
 ```
 ## 页面截图展示
 ![login](./screenshots/login.png) ![book-list](./screenshots/book-list.png)
-![book-detail](./screenshots/book-detail.png) ![book-ctn](./screenshots/book-ctn.jpg)
+![book-detail](./screenshots/book-detail.png) ![book-ctn](./screenshots/book-ctn.png)
