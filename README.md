@@ -8,6 +8,20 @@ vue+node+mongodb+ES6+fetch
 
 ```
 git clone https://github.com/tzcteddy/read.git
+
+下载安装mongodb:http://dl.mongodb.org/dl/win32/x86_64
+
+指定数据目录(如)：F:\data
+
+cmd 进入到bin目录:
+【32位】
+执行：mongod --dbpath=F:\data --storageEngine=mmapv1
+【64位】
+执行：mongod --dbpath=F:\data
+
+继续cmd 进入到bin目录(上一个别关):
+执行：mongo
+
 cd admin 
 npm install
 node app.js
